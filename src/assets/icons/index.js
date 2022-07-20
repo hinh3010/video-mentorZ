@@ -1,16 +1,13 @@
-// import iconMonHoc from './MonHoc.png'
-import iconMonHoc from './MonHoc.svg'
-import iconTaiLieu from './TaiLieu.svg'
-import iconThiTuDo from './ThiTuDo.svg'
-import iconConfession from './Confession.svg'
-// import iconMonHoc from './MonHoc.svg'
+import Logo from './Logo.jpg'
+import Banner from './Banner.jpg'
+import star from './star.jpg'
+import check from './check.jpg'
+import lock from './lock.jpg'
 
 
-const icons = {
-    iconMonHoc ,
-    iconTaiLieu,
-    iconThiTuDo ,
-    iconConfession
+const images = {
+    Logo, Banner,
+    star, lock, check
 }
 
-export default icons
+export default images

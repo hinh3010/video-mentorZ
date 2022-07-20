@@ -1,11 +1,27 @@
-.abc{
+.abc {
     color: red !important;
 }
-.btn-border{
+.btn-border {
     border-radius: 7px;
 }
-.center-format{
+.center-format {
     display: flex;
     justify-content: center;
 }
- 
+
+$gray-600: #748194 !default;
+.scrollbar {
+    scrollbar-color: rgba($gray-600, 0.3) transparent;
+    scrollbar-width: thin;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+        height: 7px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba($gray-600, 0.3);
+    }
+}

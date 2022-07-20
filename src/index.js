@@ -66,7 +66,7 @@ import Defaultlive from './pages/Defaultlive';
 
 // import Defaultcourseone from './pages/Defaultcourseone';
 // v2
-import Defaultcourseone from './pages/DefaultcourseoneV2';
+import CourseVideos from './pages/CourseVideos';
 
 import Defaultcoursetwo from './pages/Defaultcoursetwo';
 import Defaultuserprofile from './pages/Defaultuserprofile';
@@ -281,7 +281,7 @@ class Root extends Component {
             path={`${process.env.PUBLIC_URL}/default`}
             component={Default}
           />
-           <Route
+          <Route
             exact
             path={`${process.env.PUBLIC_URL}/defaultStudent`}
             component={DefaultStudent}
@@ -325,7 +325,7 @@ class Root extends Component {
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/default-course-one`}
-            component={Defaultcourseone}
+            component={CourseVideos}
           />
           <Route
             exact
