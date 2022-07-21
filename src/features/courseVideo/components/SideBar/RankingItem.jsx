@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import images from '../../../assets/icons';
-import './style.scss'
+import images from '../../images';
+import styles from './style.module.scss';
+import classNames from 'classnames/bind';
 
+const cx = classNames.bind(styles);
 function RankingItem(props) {
     const { name, description, star, avatar, rank } = props.arr;
     return (
-        <li className="item-ranking">
+        <li className={cx("item-ranking")}>
             <Link
                 to="/default-author-profile"
-                className="item-ranking-link"
+                className={cx("item-ranking-link")}
                 data-tab="chats"
             >
                 <img
@@ -18,11 +20,11 @@ function RankingItem(props) {
                     alt="user"
                     className="w40 mr-2"
                 />
-                <div className="item-ranking-text">
-                    <p className="text name" >{name}</p>
-                    <p className="text description"  >{description}</p>
+                <div className={cx("item-ranking-text")}>
+                    <p>{name}</p>
+                    <p>{description}</p>
                 </div>
-                <div className="item-ranking-star" >
+                <div className={cx("item-ranking-star")} >
                     <span >{star}</span>
                     <img src={images.star} alt="s" />
                 </div>

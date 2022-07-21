@@ -1,6 +1,9 @@
 import React from 'react';
 import RankingItem from './RankingItem';
-import './style.scss'
+import styles from './style.module.scss';
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
 
 const arrs = [
     { id: 1, name: 'Hoang Ngoc Bich', description: 'Sinh vien', star: '5.0' },
@@ -12,10 +15,10 @@ const arrs = [
 function Ranking(props) {
     return (
         <>
-            <div className="title-ranking">
+            <div id={cx("title-ranking")}>
                 <span>Bảng xếp hạng</span>
             </div>
-            <ul className="menu-ranking">
+            <ul id={cx("menu-ranking")}>
                 {arrs.map(arr => <RankingItem arr={arr} key={arr.id} />)}
             </ul>
         </>

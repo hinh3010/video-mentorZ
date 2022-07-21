@@ -1,8 +1,7 @@
 import React from 'react';
+import images from '../../images';
 import styles from './style.module.scss';
 import classNames from 'classnames/bind';
-import images from '../../../assets/icons';
-import { Container } from 'react-bootstrap';
 
 const cx = classNames.bind(styles);
 

@@ -64,9 +64,10 @@ import Defaultchannel from './pages/Defaultchannel';
 import Defaultlive from './pages/Defaultlive';
 
 
-// import Defaultcourseone from './pages/Defaultcourseone';
+import Defaultcourseone from './pages/Defaultcourseone';
 // v2
-import CourseVideos from './pages/CourseVideos';
+// import CourseVideos from './pages/CourseVideos';
+import CourseVideos from './features/courseVideo/page/CourseVideosV2';
 
 import Defaultcoursetwo from './pages/Defaultcoursetwo';
 import Defaultuserprofile from './pages/Defaultuserprofile';
@@ -324,9 +325,15 @@ class Root extends Component {
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/default-course-one`}
+            path={`${process.env.PUBLIC_URL}/video-course`}
             component={CourseVideos}
           />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/default-course-one`}
+            component={Defaultcourseone}
+          />
+
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/default-course-two`}

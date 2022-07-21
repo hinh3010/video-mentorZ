@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 class Navheader extends Component {
     render() {
         return (
-            <nav className="navigation scroll-bar" style={{maxWidth : '280px'}}>
+            <nav className="navigation scroll-bar" style={{ maxWidth: '280px' }}>
                 <div className="container pl-0 pr-0">
                     <div className="nav-content">
                         <div className="nav-top">

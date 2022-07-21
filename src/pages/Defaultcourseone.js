@@ -16,7 +16,7 @@ class Defaultcourseone extends Component {
                     <Navheader />
 
                     <div className="main-content">
-                        <Appheader />
+                        {/* <Appheader /> */}
 
                         <div className="middle-sidebar-bottom theme-dark-bg">
                             <div className="middle-sidebar-left">

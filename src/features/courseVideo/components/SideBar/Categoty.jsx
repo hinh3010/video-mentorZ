@@ -1,22 +1,25 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { IconConfession, IconMonHoc, IconQuanLy, IconTaiLieu, IconThiTuDo } from '../../../assets/icons/IconSideBar';
-import './style.scss';
+import { IconConfession, IconMonHoc, IconQuanLy, IconTaiLieu, IconThiTuDo } from '../../icon/IconSideBar';
 
+import styles from './style.module.scss';
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
 function Categoty(props) {
     return (
         <div>
 
-            <div className="title-category">
+            <div id={cx("title-category")}>
                 <span>Danh mục</span>
             </div>
 
-            <ul className="menu-category" >
-                <li className='item-categoty '>
+            <ul id={cx("menu-category")} >
+                <li className={cx('item-categoty')}>
                     <NavLink
                         activeClassName="active"
                         to="/default"
-                        className="item-categoty-link "
+                        className={cx("item-categoty-link")}
                         data-tab="chats"
                     >
                         <IconMonHoc />
@@ -24,11 +27,11 @@ function Categoty(props) {
                     </NavLink>
                 </li>
 
-                <li className='item-categoty'>
+                <li className={cx('item-categoty')}>
                     <NavLink
                         activeClassName="active"
                         to="/default-follower"
-                        className="item-categoty-link "
+                        className={cx("item-categoty-link")}
                         data-tab="friends"
                     >
                         <IconTaiLieu />
@@ -36,11 +39,11 @@ function Categoty(props) {
                     </NavLink>
                 </li>
 
-                <li className='item-categoty'>
+                <li className={cx('item-categoty')}>
                     <NavLink
                         activeClassName="active"
                         to="/default-channel"
-                        className="item-categoty-link"
+                        className={cx("item-categoty-link")}
                         data-tab="favorites"
                     >
                         <IconQuanLy />
@@ -48,23 +51,23 @@ function Categoty(props) {
                     </NavLink>
                 </li>
 
-                <li className='item-categoty'>
+                <li className={cx('item-categoty')}>
                     <NavLink
                         activeClassName="active"
                         to="/default-live-stream"
-                        className=" item-categoty-link"
+                        className={cx("item-categoty-link")}
                         data-tab="favorites"
                     >
                         <IconThiTuDo />
                         <span>Thi tự do</span>
                     </NavLink>
                 </li>
-                <li className="item-categoty">
+                <li className={cx('item-categoty')}>
                     <NavLink
                         activeClassName="active"
                         to="/default-user-profile"
                         data-tab="archived"
-                        className="item-categoty-link"
+                        className={cx("item-categoty-link")}
                     >
                         <IconConfession />
                         <span >Confesion</span>
